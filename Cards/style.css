@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+.fundo {
+    height: 750px;
+    width: 500px;
+    background-color: #194264;
+}
+
+.semifundo {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    height: 700px;
+    width: 450px;
+    background-color: #1d4d74;
+    top: 25px;
+    left: 25px;
+}
+
+#imgtrofeu {
+    position: relative;
+    height: 80px;
+    bottom: 775px;
+    left: 340px;
+}
+
+#imgconqs {
+    position: relative;
+    height: 110px;
+    bottom: 200px;
+    right: 80px;
+}
+
+#myimg{
+    height: 150px;
+    position: relative;
+    bottom: 476px;
+    right: 460px
+}
+
+#playercard {
+    position: relative;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    left: 25px;
+    bottom: 75px;
+    font-size: 25px;
+}
+
+#missao {
+    position: relative;
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    color: #f9ca2d;
+    font-size: 25px;
+    text-align: center;
+    bottom: 40px;
+}
+
+#levelup {
+    position: relative;
+    color: #f9ca2d;
+    font-family: 'Press Start 2P', monospace;
+    bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.insemifundo {
+    position: relative;
+    height: 120px;
+    width: 800px;
+    background-color: #225986;
+    top: 100px;
+}
+
+.info {
+    position: relative;
+    height: 450px;
+    background-color: #f4f4ed;
+    bottom: 50px;
+}
+
+.perfil {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #afafaf;
+    border-radius: 10px;
+    top: 30px;
+    left: 20px
+}
+#rosto{
+    position: relative;
+    right: 25px;
+    bottom: 20px;
+}
+
+.nome {
+    position: relative;
+    font-family: 'VT323&display', monospace;
+    left: 200px;
+    bottom: 140px;
+    color: #194264;
+}
+
+.namebox {
+    position: relative;
+    height: 30px;
+    width: 230px;
+    background-color: #afafaf;
+    border-radius: 10px;
+    left: 198px;
+    bottom: 160px;
+}
+
+#nome {
+    position: relative;
+    font-family: 'VT323&display', monospace;
+    font-size: 28px;
+    left: 10px;
+    color: #194264;
+}
+
+.class {
+    position: relative;
+    font-family: 'VT323&display', monospace;
+    left: 200px;
+    bottom: 170px;
+    color: #194264;
+}
+
+.classbox {
+    position: relative;
+    height: 30px;
+    width: 230px;
+    background-color: #afafaf;
+    border-radius: 10px;
+    left: 198px;
+    bottom: 190px;
+}
+
+#fullstack {
+    position: relative;
+    font-family: 'VT323&display', monospace;
+    font-size: 28px;
+    left: 10px;
+    word-spacing: -10px;
+    color: #194264;
+}
+
+.xp {
+    position: relative;
+    font-family: 'Press Start 2P', monospace;
+    color: #194264;
+    font-size: 25px;
+    bottom: 175px;
+    left: 25px;
+}
+
+.nums {
+    position: relative;
+    font-size: 25px;
+    font-family: 'VT323&display', monospace;
+    bottom: 220px;
+    left: 325px;
+    color: #194264;
+}
+
+.barcinza {
+    position: relative;
+    border-radius: 8px;
+    background-color: #afafaf;
+    height: 25px;
+    width: 400px;
+    bottom: 225px;
+    left: 20px;
+}
+
+.baramarela {
+    position: relative;
+    border-radius: 8px 0 0 8px;
+    background-color: #f9ca2d;
+    height: 25px;
+    width: 150px;
+}
+
+.conq {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'VT323&display', monospace;
+    color: #194264;
+    bottom: 230px;
+}
+#imgconqs {
+    position: relative;
+    left: 50px;
+    bottom: 270px;
+}
