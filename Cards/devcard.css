@@ -3,13 +3,20 @@
 
 * {
     box-sizing: border-box;
+    
 }
-
-/* Fundo principal e secundário */
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;
+    background-color: #2e2e2e;
+}
 .fundo {
     height: 750px;
     width: 500px;
-    background-color: #050301; /* Tom mais escuro da paleta */
+    background-color: #050301; 
 }
 
 .semifundo {
@@ -18,12 +25,12 @@
     border-radius: 20px;
     height: 700px;
     width: 450px;
-    background-color: #060403; /* Segundo tom escuro */
+    background-color: #060403;
     top: 25px;
     left: 25px;
 }
 
-/* Imagens decorativas */
+
 #imgtrofeu {
     position: relative;
     height: 80px;
@@ -45,10 +52,10 @@
     right: 460px;
 }
 
-/* Texto principal */
+
 #playercard {
     position: relative;
-    color: #f9ca2d; /* Dourado – destaque */
+    color: #f9ca2d; 
     font-family: 'Press Start 2P', monospace;
     left: 25px;
     bottom: 75px;
@@ -58,7 +65,7 @@
 #missao {
     position: relative;
     font-family: 'Press Start 2P', monospace;
-    color: #f9ca2d; /* Dourado */
+    color: #f9ca2d; 
     font-size: 25px;
     text-align: center;
     bottom: 40px;
@@ -66,35 +73,30 @@
 
 #levelup {
     position: relative;
-    color: #f9ca2d; /* Dourado */
+    color: #f9ca2d; 
     font-family: 'Press Start 2P', monospace;
     bottom: 40px;
     text-align: center;
     font-size: 35px;
 }
-
-/* Seções internas */
 .insemifundo {
     position: relative;
     height: 120px;
     width: 800px;
-    background-color: #040200; /* Tom da paleta */
+    background-color: #040200;
     top: 100px;
 }
-
 .info {
     position: relative;
     height: 450px;
-    background-color: #070504; /* Tom escuro suave */
+    background-color: #070504; 
     bottom: 50px;
 }
-
-/* Cartão do perfil */
 .perfil {
     position: relative;
     height: 150px;
     width: 150px;
-    background-color: #f9ca2d; /* Tom neutro médio */
+    background-color: #f9ca2d; 
     border-radius: 10px;
     top: 30px;
     left: 20px;
@@ -105,21 +107,19 @@
     right: 28px;
     bottom: 10px;
 }
-
-/* Texto e campos */
 .nome {
     position: relative;
     font-family: 'VT323', monospace;
     left: 200px;
     bottom: 140px;
-    color: #f9ca2d; /* Mantém contraste */
+    color: #f9ca2d; 
 }
 
 .namebox {
     position: relative;
     height: 30px;
     width: 230px;
-    background-color: #f9ca2d; /* Tom escuro secundário */
+    background-color: #f9ca2d;
     border-radius: 10px;
     left: 198px;
     bottom: 160px;
@@ -150,7 +150,6 @@
     left: 198px;
     bottom: 190px;
 }
-
 #fullstack {
     position: relative;
     font-family: 'VT323', monospace;
@@ -160,8 +159,6 @@
     color: #060403;
     font-weight: bolder;
 }
-
-/* Experiência */
 .xp {
     position: relative;
     font-family: 'Press Start 2P', monospace;
@@ -180,11 +177,11 @@
     color: #f9ca2d;
 }
 
-/* Barras de progresso */
+
 .barcinza {
     position: relative;
     border-radius: 8px;
-    background-color: #2e2e2e; /* Fundo escuro */
+    background-color: #2e2e2e; 
     height: 25px;
     width: 400px;
     bottom: 225px;
@@ -194,12 +191,12 @@
 .baramarela {
     position: relative;
     border-radius: 8px 0 0 8px;
-    background-color: #f9ca2d; /* Barra de progresso dourada */
+    background-color: #f9ca2d; 
     height: 25px;
     width: 150px;
 }
 
-/* Conquistas */
+
 .conq {
     position: relative;
     text-align: center;
