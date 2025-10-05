@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fundo principal e secundário */
+.fundo {
+    height: 750px;
+    width: 500px;
+    background-color: #050301; /* Tom mais escuro da paleta */
+}
+
+.semifundo {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    height: 700px;
+    width: 450px;
+    background-color: #060403; /* Segundo tom escuro */
+    top: 25px;
+    left: 25px;
+}
+
+/* Imagens decorativas */
+#imgtrofeu {
+    position: relative;
+    height: 80px;
+    bottom: 775px;
+    left: 340px;
+}
+
+#imgconqs {
+    position: relative;
+    height: 110px;
+    bottom: 200px;
+    right: 80px;
+}
+
+#myimg {
+    height: 150px;
+    position: relative;
+    bottom: 476px;
+    right: 460px;
+}
+
+/* Texto principal */
+#playercard {
+    position: relative;
+    color: #f9ca2d; /* Dourado – destaque */
+    font-family: 'Press Start 2P', monospace;
+    left: 25px;
+    bottom: 75px;
+    font-size: 25px;
+}
+
+#missao {
+    position: relative;
+    font-family: 'Press Start 2P', monospace;
+    color: #f9ca2d; /* Dourado */
+    font-size: 25px;
+    text-align: center;
+    bottom: 40px;
+}
+
+#levelup {
+    position: relative;
+    color: #f9ca2d; /* Dourado */
+    font-family: 'Press Start 2P', monospace;
+    bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Seções internas */
+.insemifundo {
+    position: relative;
+    height: 120px;
+    width: 800px;
+    background-color: #040200; /* Tom da paleta */
+    top: 100px;
+}
+
+.info {
+    position: relative;
+    height: 450px;
+    background-color: #070504; /* Tom escuro suave */
+    bottom: 50px;
+}
+
+/* Cartão do perfil */
+.perfil {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #f9ca2d; /* Tom neutro médio */
+    border-radius: 10px;
+    top: 30px;
+    left: 20px;
+}
+
+#rosto {
+    position: relative;
+    right: 28px;
+    bottom: 10px;
+}
+
+/* Texto e campos */
+.nome {
+    position: relative;
+    font-family: 'VT323', monospace;
+    left: 200px;
+    bottom: 140px;
+    color: #f9ca2d; /* Mantém contraste */
+}
+
+.namebox {
+    position: relative;
+    height: 30px;
+    width: 230px;
+    background-color: #f9ca2d; /* Tom escuro secundário */
+    border-radius: 10px;
+    left: 198px;
+    bottom: 160px;
+}
+
+#nome {
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    left: 10px;
+    color: #060403;
+}
+
+.class {
+    position: relative;
+    font-family: 'VT323', monospace;
+    left: 200px;
+    bottom: 170px;
+    color: #f9ca2d;
+}
+
+.classbox {
+    position: relative;
+    height: 30px;
+    width: 230px;
+    background-color: #f9ca2d;
+    border-radius: 10px;
+    left: 198px;
+    bottom: 190px;
+}
+
+#fullstack {
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    left: 10px;
+    word-spacing: -10px;
+    color: #060403;
+    font-weight: bolder;
+}
+
+/* Experiência */
+.xp {
+    position: relative;
+    font-family: 'Press Start 2P', monospace;
+    color: #f9ca2d;
+    font-size: 25px;
+    bottom: 175px;
+    left: 25px;
+}
+
+.nums {
+    position: relative;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    bottom: 220px;
+    left: 325px;
+    color: #f9ca2d;
+}
+
+/* Barras de progresso */
+.barcinza {
+    position: relative;
+    border-radius: 8px;
+    background-color: #2e2e2e; /* Fundo escuro */
+    height: 25px;
+    width: 400px;
+    bottom: 225px;
+    left: 20px;
+}
+
+.baramarela {
+    position: relative;
+    border-radius: 8px 0 0 8px;
+    background-color: #f9ca2d; /* Barra de progresso dourada */
+    height: 25px;
+    width: 150px;
+}
+
+/* Conquistas */
+.conq {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    color: #f9ca2d;
+    bottom: 230px;
+}
+
+#imgconqs {
+    position: relative;
+    left: 50px;
+    bottom: 270px;
+}
