@@ -5,7 +5,7 @@ body {
     justify-content: center;
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-    color: #507091
+    color: #cf9800
     
     
 }
@@ -13,15 +13,15 @@ body {
 /* O container principal do card */
 .player-card {
     width: 310px;
-    border: 15px solid #263a4d;
+    border: 15px solid #ffd000;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(
     to bottom,
-    #002b5c 0%,     /* azul escuro */
-    #033064 20%,    /* azul escuro até 30% */
-    #082b4e 20%,    /* azul médio começa */
-    #021f3b 35%,    /* azul médio até 60% */
+    #ff9100 0%,     /* azul escuro */
+    #ff9100 20%,    /* azul escuro até 30% */
+    #ff6600 20%,    /* azul médio começa */
+    #ff6600 35%,    /* azul médio até 60% */
     #ffffff 35%,    /* branco começa */
     #ffffff 70%    /* branco até o fim */
   );      
@@ -32,7 +32,7 @@ body {
 /* Estilos do Cabeçalho */
 .card-header {
     
-    color: #ebc324;
+    color: #facf23;
     padding: 10px;
     text-align: center;
     
@@ -120,7 +120,7 @@ body {
 .xp-barra-amarela {
     width: 50%; /* (120 / 300) */
     height: 100%;
-    background-color: #f1c40f;
+    background-color: #f5a004;
     border-radius: 10px
 }
 
