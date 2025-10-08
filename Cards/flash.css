@@ -1,45 +1,44 @@
 
 body {
-    background-color: #a39d9d; /* fundo escuro para destacar o card */
+    background-color: #a39d9d; 
     display: flex;
     justify-content: center;
     margin: 0;
     font-family: 'Press Start 2P', cursive;
-    color: #507091
+    color: #183e63
     
     
 }
 
-/* O container principal do card */
+
 .player-card {
     width: 310px;
-    border: 15px solid #263a4d;
+    border: 15px solid #ff6601;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(
     to bottom,
-    #002b5c 0%,     /* azul escuro */
-    #033064 20%,    /* azul escuro até 30% */
-    #082b4e 20%,    /* azul médio começa */
-    #021f3b 35%,    /* azul médio até 60% */
-    #ffffff 35%,    /* branco começa */
-    #ffffff 70%    /* branco até o fim */
+    #ff9900 0%,    
+    #ff9900 20%,    
+    #ffd900 20%,    
+    #ffbb00 35%,    
+    #ffffff 35%,    
+    #ffffff 70%    
   );      
                      
     
 }
 
-/* Estilos do Cabeçalho */
 .card-header {
     
-    color: #ebc324;
+    color: #66581f;
     padding: 10px;
     text-align: center;
     
     
 }
 .card-header h6 {
-  font-size: 14px;   /* aumenta o tamanho do texto */
+  font-size: 14px;   
   letter-spacing: 1px;
   margin: 5px 0;
 }
@@ -60,13 +59,13 @@ body {
 }
 
 
-/* Estilos do Corpo do Card */
+
 .card-body {
     padding: 20px;
     
 }
 
-/* Seção do Perfil (Avatar + Infos) */
+
 .profile-section {
     display: flex;
     align-items: center;
@@ -90,7 +89,7 @@ body {
     margin-bottom: 4px;
 }
 
-/* DEPOIS */
+
 .info .info-box {
     background-color: #e0e0e0;
     height: 30px;
@@ -118,13 +117,13 @@ body {
 }
 
 .xp-barra-amarela {
-    width: 50%; /* (120 / 300) */
+    width: 50%;
     height: 100%;
-    background-color: #f1c40f;
+    background-color: #ffcc00;
     border-radius: 10px
 }
 
-/* Seção das Conquistas */
+
 .conquistas-section h4 {
     font-size: 0.7em;
     text-align: center;
@@ -139,6 +138,6 @@ body {
 
 .icons .icon {
     font-size: 2.5em;
-    color: #f1c40f;
-    text-shadow: 2px 2px #34495e; /* Sombra para dar profundidade */
+    color: #fcca03;
+    text-shadow: 2px 2px #0f0f02;
 }
