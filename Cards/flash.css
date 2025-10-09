@@ -13,17 +13,17 @@ body {
 
 .player-card {
     width: 310px;
-    border: 15px solid #ff6601;
+    border: 15px solid #df5606;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(
     to bottom,
     #ff9900 0%,    
-    #ff9900 20%,    
-    #ffd900 20%,    
-    #ffbb00 35%,    
-    #ffffff 35%,    
-    #ffffff 70%    
+    #f7982b 20%,    
+    #f19730 20%,    
+    #fcb128 35%,    
+    #f8b421 35%,    
+    #ee2727 70%    
   );      
                      
     
