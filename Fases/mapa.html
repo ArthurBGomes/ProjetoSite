@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="mapa.css">
 </head>
 <body>
-  <div class="game-screen">
-    <h1 id="hero-title"></h1>
-    <p>Bem-vindo à arena! Seu personagem está pronto para a batalha.</p>
+  <div class="container">
+    <div class="game-screen">
+      <h1 id="hero-title"></h1>
+      <p>Bem-vindo à arena! Seu personagem está pronto para a batalha.</p>
+      <button onclick="window.location.href='../Cards/pagcards.html'">Voltar à seleção</button>
+    </div>
+    <img src="mapa.png" alt="Mapa do jogo">
   </div>
-  <img src="mapa.png" alt="">
-  <button onclick="window.location.href='../Cards/pagcards.html'">Voltar à seleção</button>
   <script>
     const hero = localStorage.getItem('heroiSelecionado');
     const title = document.getElementById('hero-title');
@@ -20,3 +22,5 @@
   </script>
 </body>
 </html>
+
+
