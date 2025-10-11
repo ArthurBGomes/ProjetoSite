@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modelos de Cards</title>
+  <title>Selecione seu Herói</title>
   <link rel="stylesheet" href="pagcards.css">
 </head>
 <body>
   <div class="container">
-    <h1>Escolha seu Card</h1>
+    <h1>Escolha seu Herói</h1>
+
     <div class="cards">
-      <div class="card">
-        <a href="devcard.html">
-          <img src="Batcard.jpeg" alt="Card do Batman">
-          <span>Modelo Batman</span>
-        </a>
+      <div class="card" data-hero="Batman">
+        <img src="Batcard.jpeg" alt="Card do Batman">
+        <span>Batman</span>
       </div>
 
-      <div class="card">
-        <a href="flash.html">
-          <img src="FlashCard.jpeg" alt="Card do Flash">
-          <span>Modelo Flash</span>
-        </a>
+      <div class="card" data-hero="Flash">
+        <img src="FlashCard.jpeg" alt="Card do Flash">
+        <span>Flash</span>
       </div>
 
-      <div class="card">
-        <a href="superman.html">
-          <img src="SuperCard.jpeg" alt="Card do Superman">
-          <span>Modelo Superman</span>
-        </a>
+      <div class="card" data-hero="Superman">
+        <img src="SuperCard.jpeg" alt="Card do Superman">
+        <span>Superman</span>
       </div>
     </div>
+
+    <div class="selected">
+      <p>Nenhum herói selecionado</p>
+    </div>
   </div>
+
+  <script src="pagcards.js"></script>
 </body>
 </html>
