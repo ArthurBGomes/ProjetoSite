@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Up</title>
+    <title>Player Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="superman.css">
 </head>
 <body>
-  <div class="card">
-    <div class="card-header">
-      <h2 id="nomeplayercard">PLAYER CARD</h2>
-      <span class="trophy">🏆</span>
-    </div>
-    
-    <div class="mission">
-      <p>MISSÃO SEMESTRAL:</p>
-      <h1>LEVEL UP!</h1>
+
+    <div class="player-card">
+        
+        <div class="card-header">
+            
+            <div class="header-title">
+                <span>PLAYER CARD</span>
+                <span class="trophy">🏆</span>
+            </div>
+            <h5></h5>
+            <h6>MISSÃO SEMESTRAL:</h6>
+            <ul></ul>
+            </h1>LEVEL UP!</h1>
+        </div>
+
+        <div class="card-body">
+            <div class="profile-section">
+                <img src="superman.jpeg" alt="Avatar do Jogador" class="avatar">
+                
+                <div class="info">
+                    <label for="nome">NOME:</label>
+                    <div class="info-box" id="nome">Super-Man</div>
+                    
+                    <label for="classe">CLASSE:</label>
+                    <div class="info-box" id="classe">Full Stack</div>
+                </div>
+            </div>
+
+            <div class="xp-section">
+                <div class="xp-numeros">
+                    <span>XP</span>
+                    <span>150 / 300</span>
+                </div>
+                <div class="xp-barra">
+                    <div class="xp-barra-amarela"></div>
+                </div>
+            </div>
+
+            <div class="conquistas-section">
+                <h4>CONQUISTAS DESBLOQUEADAS:</h4>
+                <div class="icons">
+                    <span class="icon">⭐</span>
+                    <span class="icon">🏅</span>
+                    <span class="icon">&lt;/&gt;</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="profile">
-      <img src="superman.jpeg" alt="Avatar">
-      <div class="info">
-        <p><strong>NOME:</strong> Super-Man</p>
-        <p><strong>CLASSE:</strong> <span class="class">Full Stack</span></p>
-      </div>
-    </div>
-
-    <div class="xp">
-      <p>XP <span>150 / 300</span></p>
-      <div class="bar">
-        <div class="progress" style="width: 40%;"></div>
-      </div>
-    </div>
-
-    <div class="achievements">
-      <p>CONQUISTAS DESBLOQUEADAS:</p>
-      <div class="icons">
-        <span>⭐</span>
-        <span>🏅</span>
-        <span>&lt;/&gt;</span>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
