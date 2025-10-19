@@ -23,47 +23,45 @@ O CSS permite separar o conteúdo (HTML) da apresentação visual (CSS), o que t
     <div class="topico">
       <button class="btn-topico">2. Formas de aplicar CSS</button>
       <div class="conteudo">
-        <p>Inline (em linha): o estilo é aplicado diretamente em uma tag HTML através do atributo style.
-Exemplo: <p style="color: red;">Texto vermelho</p>
-➤ É útil para testes rápidos, mas não é recomendado para projetos grandes.
-
-Interno (no cabeçalho): o CSS é escrito dentro da tag <style> no <head> do documento HTML.
-Exemplo:
-
-<style>
-  p { color: blue; font-size: 18px; }
-</style>
-
-
-➤ Ideal para páginas únicas ou quando o estilo é específico daquele documento.
-
-Externo (arquivo .css): o CSS é colocado em um arquivo separado (por exemplo, style.css) e importado no HTML com a tag <link>.
-Exemplo: <link rel="stylesheet" href="style.css">
-➤ É a forma mais recomendada, pois facilita a manutenção e o reaproveitamento de estilos em várias páginas.</p>
+        <p>Inline (em linha): o estilo é aplicado diretamente em uma tag HTML através do atributo style. <br>
+        Interno (no cabeçalho): o CSS é escrito dentro da tag "style" no "head" do documento HTML <br>
+        Externo (arquivo .css): o CSS é colocado em um arquivo separado (por exemplo, style.css) e importado no HTML com a tag "link" <br>
+        </p>
       </div>
     </div>
 
     <div class="topico">
-      <button class="btn-topico">3. Tags e elementos</button>
+      <button class="btn-topico">3. Propriedades comuns do CSS</button>
       <div class="conteudo">
-        <p>As tags são os blocos do HTML. Exemplo: <b>&lt;p&gt;</b> cria parágrafos, 
-        <b>&lt;h1&gt;</b> títulos e <b>&lt;img&gt;</b> imagens. Juntas formam os elementos que estruturam a página.</p>
+        <p>Texto: color, font-size, font-family, text-align, line-height, text-transform. <br>
+Cores e fundos: background-color, background-image, background-size, opacity. <br>
+Bordas e espaçamentos: border, border-radius, padding, margin. <br>
+Dimensões e posição: width, height, max-width, position, top, left, right, bottom. <br>
+Display e layout: display, flex, grid, float, clear. <br>
+Animações e transições: transition, animation, keyframes.</p>
       </div>
     </div>
 
     <div class="topico">
-      <button class="btn-topico">4. Atributos</button>
+      <button class="btn-topico">4. Tipos de seletores</button>
       <div class="conteudo">
-        <p>Os atributos dão mais informações às tags, como <b>src</b> (imagem), <b>href</b> (link) e <b>alt</b> (descrição). 
-        Eles personalizam o comportamento de cada elemento.</p>
+        <p>Seletores simples: <br>
+        elemento: estiliza todas as tags com o nome especificado (p, h1, div). <br>
+        .classe: estiliza elementos com uma classe específica (.menu, .botao). <br>
+        #id: estiliza um elemento com um identificador único (#principal).</p>
       </div>
     </div>
 
     <div class="topico">
-      <button class="btn-topico">5. Textos e títulos</button>
+      <button class="btn-topico">5. Box Model (Modelo de caixa)</button>
       <div class="conteudo">
-        <p>Os textos usam <b>&lt;p&gt;</b> e os títulos variam de <b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b>, 
-        seguindo a hierarquia da informação. Isso ajuda na leitura e no SEO.</p>
+        <p>Todo elemento em CSS é tratado como uma caixa retangular composta por: <br>
+Content (conteúdo): onde o texto ou imagem aparece. <br>
+Padding: espaço entre o conteúdo e a borda. <br>
+Border: a borda que envolve o padding e o conteúdo. <br>
+Margin: espaço entre o elemento e os outros ao redor. <br>
+Entender o Box Model é essencial para alinhar e dimensionar corretamente os elementos na página. <br>
+É possível visualizar e alterar essas medidas no inspetor do navegador, ajustando o layout de forma precisa.</p>
       </div>
     </div>
 
