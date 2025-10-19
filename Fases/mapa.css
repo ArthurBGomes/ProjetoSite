@@ -6,58 +6,62 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #0d0d0d;
   color: #f5f5f5;
   min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  overflow-x: auto;
-  overflow-y: auto;
-  padding-top: 5%;
+  align-items: center;
+  padding: 40px 0;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  width: 95%;
+  max-width: 1400px;
+  gap: 60px;
 }
 
+/* Painel do jogador */
 .game-screen {
-  flex: 1;
+  width: 550px;
+  min-width: 500px;
   text-align: left;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  padding: 40px;
+  padding: 50px 40px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  max-width: 500px;
-  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.game-screen:hover {
+  transform: translateY(-4px);
 }
 
 .game-screen h1 {
   color: #ffcc00;
-  font-size: 2em;
+  font-size: 2.6em;
   margin-bottom: 15px;
 }
 
 .game-screen p {
-  font-size: 1.1em;
+  font-size: 1.6em;
   color: #ccc;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 button {
-  background: #ffcc00;
+  background: linear-gradient(90deg, #ffcc00, #ffaa00);
   color: #1e1e2f;
   border: none;
-  padding: 12px 24px;
-  font-size: 1em;
+  padding: 12px 22px;
+  font-size: 1.6em;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -68,36 +72,86 @@ button:hover {
   transform: scale(1.05);
 }
 
-img {
-  flex: 1;
-  width: 50vw;
+/* Mapa e container */
+.mapa-container {
+  position: relative;
+  flex: 1 1 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-container img {
+  width: 100%;
+  max-width: 800px;
   height: auto;
-  max-height: 80vh;
   border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  object-fit: contain;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-img:hover {
+.mapa-container img:hover {
   transform: scale(1.02);
+  filter: brightness(1.1);
 }
 
-@media (max-width: 900px) {
+/* Overlay para os destaques */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.highlight {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 204, 0, 0.25);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+area:hover + .highlight {
+  opacity: 1;
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
   .container {
     flex-direction: column;
     align-items: center;
-  }
-
-  img {
-    width: 90%;
-    max-width: 600px;
+    gap: 40px;
   }
 
   .game-screen {
     text-align: center;
   }
+
+  .mapa-container img {
+    width: 90vw;
+    max-width: 600px;
+  }
 }
-.mapajogo {
-  
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+
+  .game-screen {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .mapa-container img {
+    width: 95vw;
+  }
 }
