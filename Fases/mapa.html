@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mapa do Jogo</title>
   <link rel="stylesheet" href="mapa.css">
 </head>
 <body>
@@ -13,8 +13,31 @@
       <p>Bem-vindo à arena! Seu personagem está pronto para a batalha.</p>
       <button onclick="window.location.href='../Cards/pagcards.html'">Voltar à seleção</button>
     </div>
-    <img src="../imagens/mapa.png" alt="Mapa do jogo">
+
+    
+    <img src="../imagens/mapa.png" usemap="#mapaJogo" alt="Mapa do jogo" width="517" height="580">
+
+    <div class="mapaJogo">
+      <!-- Número 1 – topo central -->
+      <area shape="circle" coords="260,0,30" href="fase1.html" alt="Fase 1">
+
+      <!-- Número 2 – canto superior esquerdo (área verde escura) -->
+      <area shape="circle" coords="195,160,30" href="fase2.html" alt="Fase 2">
+
+      <!-- Número 3 – esquerda, meio do mapa -->
+      <area shape="circle" coords="185,250,30" href="fase3.html" alt="Fase 3">
+
+      <!-- Número 4 – topo direito (areia clara) -->
+      <area shape="circle" coords="410,90,30" href="fase4.html" alt="Fase 4">
+
+      <!-- Número 5 – centro-direita (floresta verde) -->
+      <area shape="circle" coords="370,270,30" href="fase5.html" alt="Fase 5">
+
+      <!-- Número 6 – parte inferior (deserto/montanhas) -->
+      <area shape="circle" coords="250,460,30" href="fase6.html" alt="Fase 6">
+    </div>
   </div>
+
   <script>
     const hero = localStorage.getItem('heroiSelecionado');
     const title = document.getElementById('hero-title');
@@ -22,5 +45,3 @@
   </script>
 </body>
 </html>
-
-
