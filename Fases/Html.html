@@ -8,22 +8,107 @@
 </head>
 <body>
   <div class="container">
-    <div class="card">
-      <h1>Tópicos sobre HTML</h1>
-      <p>Principais conceitos para entender a base da web:</p>
-      <ul>
-        <li>O que é HTML e sua função na web</li>
-        <li>Estrutura básica de um documento HTML</li>
-        <li>Tags, atributos e elementos</li>
-        <li>Uso de títulos, parágrafos e listas</li>
-        <li>Links e imagens em HTML</li>
-        <li>Formulários e inputs</li>
-        <li>Boas práticas de semântica</li>
-      </ul>
-      <button>Voltar ao menu</button>
+    <h1 class="titulo-principal">Tópicos sobre HTML</h1>
+
+    <div class="topico">
+      <button class="btn-topico">1. O que é HTML</button>
+      <div class="conteudo">
+        <p>HTML significa <b>HyperText Markup Language</b> — é a base da web e serve para estruturar textos, imagens e links. 
+        Não é uma linguagem de programação, mas sim de marcação, usada para dizer ao navegador como exibir o conteúdo.</p>
+      </div>
     </div>
 
+    <div class="topico">
+      <button class="btn-topico">2. Estrutura básica</button>
+      <div class="conteudo">
+        <p>Todo arquivo HTML tem as tags principais: <b>&lt;html&gt;</b>, <b>&lt;head&gt;</b> e <b>&lt;body&gt;</b>. 
+        O &lt;head&gt; guarda informações invisíveis, e o &lt;body&gt; contém tudo o que aparece na página.</p>
+      </div>
+    </div>
 
+    <div class="topico">
+      <button class="btn-topico">3. Tags e elementos</button>
+      <div class="conteudo">
+        <p>As tags são os blocos do HTML. Exemplo: <b>&lt;p&gt;</b> cria parágrafos, 
+        <b>&lt;h1&gt;</b> títulos e <b>&lt;img&gt;</b> imagens. Juntas formam os elementos que estruturam a página.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">4. Atributos</button>
+      <div class="conteudo">
+        <p>Os atributos dão mais informações às tags, como <b>src</b> (imagem), <b>href</b> (link) e <b>alt</b> (descrição). 
+        Eles personalizam o comportamento de cada elemento.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">5. Textos e títulos</button>
+      <div class="conteudo">
+        <p>Os textos usam <b>&lt;p&gt;</b> e os títulos variam de <b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b>, 
+        seguindo a hierarquia da informação. Isso ajuda na leitura e no SEO.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">6. Listas</button>
+      <div class="conteudo">
+        <p>As listas podem ser <b>ordenadas (&lt;ol&gt;)</b> ou <b>não ordenadas (&lt;ul&gt;)</b>. 
+        Cada item usa <b>&lt;li&gt;</b>. São usadas em menus, tópicos e instruções.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">7. Links</button>
+      <div class="conteudo">
+        <p>Os links usam a tag <b>&lt;a href="..."&gt;</b> para conectar páginas ou partes do site. 
+        São essenciais para a navegação na web.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">8. Imagens</button>
+      <div class="conteudo">
+        <p>As imagens são inseridas com <b>&lt;img&gt;</b> e usam <b>src</b> para o caminho e <b>alt</b> para o texto alternativo. 
+        Tornam o conteúdo mais visual e acessível.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">9. Formulários</button>
+      <div class="conteudo">
+        <p>Os formulários usam <b>&lt;form&gt;</b> e campos como <b>&lt;input&gt;</b>, <b>&lt;button&gt;</b> e <b>&lt;label&gt;</b> 
+        para coletar dados de usuários, como logins e mensagens.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">10. Semântica</button>
+      <div class="conteudo">
+        <p>A semântica dá significado ao código, usando tags como <b>&lt;header&gt;</b>, <b>&lt;main&gt;</b> e <b>&lt;footer&gt;</b>. 
+        Isso ajuda mecanismos de busca e acessibilidade.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">11. A tag &lt;div&gt;</button>
+      <div class="conteudo">
+        <p>A <b>&lt;div&gt;</b> é uma caixa usada para agrupar elementos e organizar o layout. 
+        Ela não tem função visual por padrão, mas é essencial para aplicar estilos com CSS e estruturar seções do site.</p>
+      </div>
+    </div>
   </div>
+    <script>
+    const botoes = document.querySelectorAll('.btn-topico');
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const conteudo = botao.nextElementSibling;
+        conteudo.style.display =
+          conteudo.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
