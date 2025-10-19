@@ -14,7 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .container {
@@ -113,7 +114,7 @@ button:hover {
   border-radius: 50%;
   background: rgba(255, 204, 0, 0.25);
   transform: translate(-50%, -50%);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
   pointer-events: none;
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
@@ -123,35 +124,3 @@ area:hover + .highlight {
   opacity: 1;
 }
 
-/* Responsivo */
-@media (max-width: 1000px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .game-screen {
-    text-align: center;
-  }
-
-  .mapa-container img {
-    width: 90vw;
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 600px) {
-  button {
-    width: 100%;
-  }
-
-  .game-screen {
-    width: 90%;
-    padding: 25px;
-  }
-
-  .mapa-container img {
-    width: 95vw;
-  }
-}

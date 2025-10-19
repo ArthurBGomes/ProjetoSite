@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tópicos sobre HTML</title>
+  <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1 class="titulo-principal">Tópicos sobre CSS</h1>
+
+    <div class="topico">
+      <button class="btn-topico">1. O que é CSS</button>
+      <div class="conteudo">
+        <p>CSS (Cascading Style Sheets) é a linguagem usada para descrever a aparência e o layout de páginas da web.
+Ela trabalha em conjunto com o HTML, que define a estrutura e o conteúdo da página, enquanto o CSS controla cores, fontes, tamanhos, espaçamentos, bordas, alinhamentos, animações e muito mais.
+A palavra “Cascading” (em cascata) refere-se à forma como as regras de estilo são aplicadas: quando há várias declarações de estilo para o mesmo elemento, o navegador decide qual usar com base em uma hierarquia de prioridades (ordem de carregamento, especificidade e herança).
+O CSS permite separar o conteúdo (HTML) da apresentação visual (CSS), o que torna o código mais limpo, fácil de manter e reutilizável. </p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">2. Formas de aplicar CSS</button>
+      <div class="conteudo">
+        <p>Inline (em linha): o estilo é aplicado diretamente em uma tag HTML através do atributo style.
+Exemplo: <p style="color: red;">Texto vermelho</p>
+➤ É útil para testes rápidos, mas não é recomendado para projetos grandes.
+
+Interno (no cabeçalho): o CSS é escrito dentro da tag <style> no <head> do documento HTML.
+Exemplo:
+
+<style>
+  p { color: blue; font-size: 18px; }
+</style>
+
+
+➤ Ideal para páginas únicas ou quando o estilo é específico daquele documento.
+
+Externo (arquivo .css): o CSS é colocado em um arquivo separado (por exemplo, style.css) e importado no HTML com a tag <link>.
+Exemplo: <link rel="stylesheet" href="style.css">
+➤ É a forma mais recomendada, pois facilita a manutenção e o reaproveitamento de estilos em várias páginas.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">3. Tags e elementos</button>
+      <div class="conteudo">
+        <p>As tags são os blocos do HTML. Exemplo: <b>&lt;p&gt;</b> cria parágrafos, 
+        <b>&lt;h1&gt;</b> títulos e <b>&lt;img&gt;</b> imagens. Juntas formam os elementos que estruturam a página.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">4. Atributos</button>
+      <div class="conteudo">
+        <p>Os atributos dão mais informações às tags, como <b>src</b> (imagem), <b>href</b> (link) e <b>alt</b> (descrição). 
+        Eles personalizam o comportamento de cada elemento.</p>
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">5. Textos e títulos</button>
+      <div class="conteudo">
+        <p>Os textos usam <b>&lt;p&gt;</b> e os títulos variam de <b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b>, 
+        seguindo a hierarquia da informação. Isso ajuda na leitura e no SEO.</p>
+      </div>
+    </div>
+
+</div>
+    <script>
+    const botoes = document.querySelectorAll('.btn-topico');
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const conteudo = botao.nextElementSibling;
+        conteudo.style.display =
+          conteudo.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>

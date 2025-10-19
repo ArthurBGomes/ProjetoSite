@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fase2</title>
-    <link rel="stylesheet" href="htmlhtml.css">
+  <meta charset="UTF-8">
+  <title>Quiz HTML - Tópicos 1 a 5</title>
+  <link rel="stylesheet" href="exerHTML.css">
 </head>
 <body>
-    
+  <h1>Quiz de HTML – Tópicos 1 a 5</h1>
+
+  <!-- Questão 1 -->
+  <div class="question">
+    <p><strong>1. O que é HTML?</strong></p>
+    <label><input type="radio" name="q1"> Uma linguagem de programação</label><br>
+    <label><input type="radio" name="q1" data-correct="true"> Uma linguagem de marcação para estruturar páginas</label><br>
+    <label><input type="radio" name="q1"> Um programa para desenhar sites</label><br>
+    <button onclick="checkAnswer(1)">Ver resposta</button>
+    <p id="res1"></p>
+  </div>
+
+  <!-- Questão 2 -->
+  <div class="question">
+    <p><strong>2. Qual dessas opções mostra a estrutura básica de um documento HTML?</strong></p>
+    <label><input type="radio" name="q2"> &lt;html&gt;&lt;title&gt;&lt;body&gt;</label><br>
+    <label><input type="radio" name="q2" data-correct="true"> &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</label><br>
+    <label><input type="radio" name="q2"> &lt;body&gt;&lt;html&gt;&lt;/html&gt;&lt;/body&gt;</label><br>
+    <button onclick="checkAnswer(2)">Ver resposta</button>
+    <p id="res2"></p>
+  </div>
+
+  <!-- Questão 3 -->
+  <div class="question">
+    <p><strong>3. O que são tags e elementos no HTML?</strong></p>
+    <label><input type="radio" name="q3"> Palavras que não têm função no código</label><br>
+    <label><input type="radio" name="q3" data-correct="true"> Estruturas usadas para marcar e organizar o conteúdo</label><br>
+    <label><input type="radio" name="q3"> Imagens que aparecem no site</label><br>
+    <button onclick="checkAnswer(3)">Ver resposta</button>
+    <p id="res3"></p>
+  </div>
+
+  <!-- Questão 4 -->
+  <div class="question">
+    <p><strong>4. Para que servem os atributos nas tags HTML?</strong></p>
+    <label><input type="radio" name="q4"> Para mudar a cor do navegador</label><br>
+    <label><input type="radio" name="q4"> Para adicionar comentários</label><br>
+    <label><input type="radio" name="q4" data-correct="true"> Para fornecer informações extras sobre a tag</label><br>
+    <button onclick="checkAnswer(4)">Ver resposta</button>
+    <p id="res4"></p>
+  </div>
+
+  <!-- Questão 5 -->
+  <div class="question">
+    <p><strong>5. Quais tags são usadas para criar textos e títulos?</strong></p>
+    <label><input type="radio" name="q5" data-correct="true"> &lt;h1&gt; a &lt;h6&gt; e &lt;p&gt;</label><br>
+    <label><input type="radio" name="q5"> &lt;div&gt; e &lt;span&gt;</label><br>
+    <label><input type="radio" name="q5"> &lt;ul&gt; e &lt;li&gt;</label><br>
+    <button onclick="checkAnswer(5)">Ver resposta</button>
+    <p id="res5"></p>
+  </div>
+
+  <script>
+    function checkAnswer(num) {
+      const radios = document.getElementsByName("q" + num);
+      let correct = false;
+      for (let r of radios) {
+        if (r.checked && r.dataset.correct !== undefined) correct = true;
+      }
+      const res = document.getElementById("res" + num);
+      if (correct) {
+        res.innerHTML = "✅ Correto!";
+        res.className = "correct";
+      } else {
+        res.innerHTML = "❌ Errado. Tente novamente.";
+        res.className = "wrong";
+      }
+    }
+  </script>
 </body>
 </html>
