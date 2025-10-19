@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz HTML - Tópicos 1 a 5</title>
+  <link rel="stylesheet" href="exeJS.css">
 </head>
 <body>
-    
+  <h1>Quiz de JavaScript – Tópicos 1 a 5</h1>
+
+  <!-- Questão 1 -->
+  <div class="question">
+    <p><strong>1. O que é JavaScript?</strong></p>
+    JavaScript é uma linguagem de programação usada para: <br>
+    <label><input type="radio" name="q1"> Criar apenas o layout estático de sites.</label><br>
+    <label><input type="radio" name="q1" data-correct="true"> Deixar os sites interativos e dinâmicos</label><br>
+    <label><input type="radio" name="q1">Substituir o HTML e o CSS.</label><br>
+    <button onclick="checkAnswer(1)">Ver resposta</button>
+    <p id="res1"></p>
+  </div>
+
+  <!-- Questão 2 -->
+  <div class="question">
+    <p><strong>2. Onde o JavaScript é usado</strong></p>
+    Além de páginas da web, o JavaScript também pode ser usado em: <br>
+    <label><input type="radio" name="q2" data-correct="true"> Aplicativos, servidores e jogos.</label><br>
+    <label><input type="radio" name="q2" >Apenas para imprimir textos no console.</label><br>
+    <label><input type="radio" name="q2">Somente para escrever emails automáticos</label><br>
+    <button onclick="checkAnswer(2)">Ver resposta</button>
+    <p id="res2"></p>
+  </div>
+
+  <!-- Questão 3 -->
+  <div class="question">
+    <p><strong>3. Tipos de dados</strong></p>
+    Qual dos seguintes NÃO é um tipo de dado em JavaScript?<br>
+    <label><input type="radio" name="q3"> String</label><br>
+    <label><input type="radio" name="q3" >Boolean</label><br>
+    <label><input type="radio" name="q3" data-correct="true">Char</label><br>
+    <button onclick="checkAnswer(3)">Ver resposta</button>
+    <p id="res3"></p>
+  </div>
+
+  <!-- Questão 4 -->
+  <div class="question">
+    <p><strong>4. Condições (if / else)?</strong></p>
+    O que uma condição if / else permite fazer?<br>
+    <label><input type="radio" name="q4"> Repetir uma ação várias vezes automaticamente.</label><br>
+    <label><input type="radio" name="q4" data-correct="true"> Tomar decisões diferentes dependendo de uma condição.</label><br>
+    <label><input type="radio" name="q4" > Guardar várias informações dentro de uma lista.</label><br>
+    <button onclick="checkAnswer(4)">Ver resposta</button>
+    <p id="res4"></p>
+  </div>
+
+  <!-- Questão 5 -->
+  <div class="question">
+    <p><strong>5. Arrays e Objetos</strong></p>
+    Qual é a diferença entre um array e um objeto?<br>
+    <label><input type="radio" name="q5" data-correct="true">Arrays guardam listas de valores; objetos guardam informações relacionadas a um tema.</label><br>
+    <label><input type="radio" name="q5">Arrays guardam apenas números; objetos guardam apenas textos.</label><br>
+    <label><input type="radio" name="q5"> Arrays e objetos são exatamente a mesma coisa</label><br>
+    <button onclick="checkAnswer(5)">Ver resposta</button>
+    <p id="res5"></p>
+  </div>
+
+  <script>
+    function checkAnswer(num) {
+      const radios = document.getElementsByName("q" + num);
+      let correct = false;
+      for (let r of radios) {
+        if (r.checked && r.dataset.correct !== undefined) correct = true;
+      }
+      const res = document.getElementById("res" + num);
+      if (correct) {
+        res.innerHTML = "✅ Correto!";
+        res.className = "correct";
+      } else {
+        res.innerHTML = "❌ Errado. Tente novamente.";
+        res.className = "wrong";
+      }
+    }
+  </script>
 </body>
 </html>
