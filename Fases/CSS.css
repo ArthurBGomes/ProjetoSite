@@ -1,0 +1,47 @@
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.btn-topico {
+  background-color: #1a1a1a;
+  color: #ffcc00;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.2s;
+}
+
+.btn-topico:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.conteudo {
+  background-color: #111;
+  border-left: 3px solid #ffcc00;
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: none;
+}
