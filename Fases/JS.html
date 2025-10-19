@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tópicos sobre HTML</title>
+  <link rel="stylesheet" href="htmlhtml.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1 class="titulo-principal">Tópicos sobre HTML</h1>
+
+    <div class="topico">
+      <button class="btn-topico">1. O que JavaScript?</button>
+      <div class="conteudo">
+        avaScript é uma linguagem de programação usada para deixar os sites interativos e dinâmicos.
+Com ela, é possível criar animações, verificar formulários, mudar cores, textos e muito mais.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">2. Onde o JavaScript é usado</button>
+      <div class="conteudo">
+       É utilizado principalmente em páginas da web, mas também pode ser usado em aplicativos, servidores e até jogos.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">3. Variáveis</button>
+      <div class="conteudo">
+        As variáveis servem para guardar informações, como números, textos ou valores verdadeiros/falsos.
+Existem três formas principais de criar variáveis: var, let e const.
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">4. Tipos de dados</button>
+      <div class="conteudo">
+        Os principais tipos de dados em JavaScript são:
+
+Texto (string),
+
+Número (number),
+
+Verdadeiro ou falso (boolean),
+
+Nulo (null),
+
+Indefinido (undefined).
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">5. Operadores</button>
+      <div class="conteudo">
+        São usados para realizar operações.
+Podem ser de soma, subtração, comparação ou lógica (como “e”, “ou”, “não”).
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">6. Condições (if / else)</button>
+      <div class="conteudo">
+       Permitem que o programa tome decisões diferentes dependendo de uma condição.
+Exemplo: se algo for verdadeiro, faça uma ação; senão, faça outra.
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">7. Laços de repetição (loops)</button>
+      <div class="conteudo">
+        São usados para repetir uma ação várias vezes.
+Os mais usados são: “for”, “while” e “do while”.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">8. Funções</button>
+      <div class="conteudo">
+        Funções são blocos de comandos criados para executar uma tarefa específica.
+Servem para evitar repetição de código e organizar o programa.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">9. Arrays</button>
+      <div class="conteudo">
+        São listas que guardam vários valores dentro de uma única variável.
+Por exemplo, uma lista de frutas ou nomes.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">10. Objetos</button>
+      <div class="conteudo">
+       Objetos guardam várias informações relacionadas a um mesmo tema.
+Por exemplo, nome, idade e cidade de uma pessoa.
+      </div>
+    </div>
+
+    <div class="topico">
+      <button class="btn-topico">11. DOM (Document Object Model)</button>
+      <div class="conteudo">
+        É o que permite ao JavaScript interagir com o HTML da página.
+Com o DOM, o JavaScript pode alterar textos, imagens e cores em tempo real.
+    </div>
+  </div>
+    <script>
+    const botoes = document.querySelectorAll('.btn-topico');
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const conteudo = botao.nextElementSibling;
+        conteudo.style.display =
+          conteudo.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
