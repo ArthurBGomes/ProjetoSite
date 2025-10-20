@@ -45,3 +45,17 @@ body {
   border-radius: 6px;
   display: none;
 }
+
+#videocss {
+  height: 240px;
+  position: relative;
+  right: 115px;
+  top: 100px;
+
+}
+
+#textovideo {
+  color: #ffcc00;
+  position: relative;
+  left: 120px;
+}
