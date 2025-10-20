@@ -57,8 +57,8 @@ label {
   border: 2px solid #ffcc00;
   border-radius: 20px;
   padding: 40px;
-  width: 80px;
-  height: 30px;
+  width: 50px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ label {
   font-size: 1.1rem;
   border: none;
   border-radius: 10px;
-  padding: 20px 26px;
+  padding: 10px 13px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -84,6 +84,45 @@ label {
   box-shadow: 0 0 25px #ffcc00, 0 0 50px #ffaa00, 0 0 80px #ff9900;
 }
 .nextage button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px #ffcc00;
+}
+.lasttage {
+  position: fixed;
+  top: 85%;
+  right: 13%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 2px solid #ffcc00;
+  border-radius: 20px;
+  padding: 40px;
+  width: 50px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px #ffcc00;
+}
+.lasttage button {
+  background: linear-gradient(90deg, #ffcc00, #ffaa00);
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #ffcc00, 0 0 25px #ffaa00;
+}
+.lasttage button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ffe066, #ffbb00);
+  box-shadow: 0 0 25px #ffcc00, 0 0 50px #ffaa00, 0 0 80px #ff9900;
+}
+.lasttage button:active {
   transform: scale(0.95);
   box-shadow: 0 0 10px #ffcc00;
 }
