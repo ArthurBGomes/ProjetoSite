@@ -113,3 +113,8 @@ button:hover {
 area:hover + .highlight {
   opacity: 1;
 }
+footer {
+  margin-top: 26px;
+  color: #bdbdbd;
+  font-size: 1.7rem;
+}

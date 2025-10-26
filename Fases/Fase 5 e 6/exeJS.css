@@ -107,3 +107,8 @@ a {
   flex-direction:column;
   flex-wrap: wrap;
 }
+footer {
+  margin-top: 26px;
+  color: #bdbdbd;
+  font-size: 1.2rem;
+}

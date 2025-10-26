@@ -154,3 +154,8 @@ a {
   text-decoration: none;
   gap: 30px;
 }
+footer {
+  margin-top: 26px;
+  color: #bdbdbd;
+  font-size: 1.2rem;
+}
