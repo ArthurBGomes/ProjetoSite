@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   padding: 24px;
   transform: scale(0.8);
+  overflow: hidden;
 }
 .container {
   width: 100%;
