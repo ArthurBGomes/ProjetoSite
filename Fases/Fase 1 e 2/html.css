@@ -125,6 +125,8 @@ body {
   box-shadow: 0 0 10px #ffcc00;
 }
 a {
+  display: flex;
+  flex-direction: column;
   background-color: #1a1a1a;
   color: #ffcc00;
   font-weight: bold;
