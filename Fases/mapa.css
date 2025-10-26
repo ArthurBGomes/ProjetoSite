@@ -13,9 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  overflow-x: auto;
-  overflow-y: auto;
-  transform:scale(0.5) ;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
 }
 .container {
   display: flex;
