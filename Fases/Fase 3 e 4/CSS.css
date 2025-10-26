@@ -138,6 +138,8 @@ body {
   box-shadow: 0 0 10px #ffcc00;
 }
 a {
+  display: flex;
+  flex-direction: column;
   background-color: #1a1a1a;
   color: #ffcc00;
   font-weight: bold;
@@ -150,4 +152,5 @@ a {
   margin-top: 8px;
   transition: 0.2s;
   text-decoration: none;
+  gap: 30px;
 }
