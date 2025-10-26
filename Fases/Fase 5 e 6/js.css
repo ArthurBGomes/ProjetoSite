@@ -55,7 +55,7 @@ body {
   border-radius: 20px;
   padding: 40px;
   width: 50px;
-  height: 15px;
+  height: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +93,8 @@ body {
   border: 2px solid #ffcc00;
   border-radius: 20px;
   padding: 40px;
-  width: 50px;
-  height: 15px;
+  width: 40px;
+  height: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
